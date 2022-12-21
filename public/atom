@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Blog</title>
+    <subtitle>Blog</subtitle>
+    <link href="/atom" rel="self" type="application/rss+xml"/>
+    <link href="/" />
+    <updated>2022-12-21T22:48:43.186Z</updated>
+    <id>My Notion Blog</id>
+    <entry>
+      <id>/blog/my-firts-blog</id>
+      <title>First blog</title>
+      <link href="/blog/my-firts-blog"/>
+      <updated>2022-12-21T07:00:00.951Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/my-firts-blog">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Jorge</name></author>
+    </entry>
+    <entry>
+      <id>/blog/hi</id>
+      <title>holas</title>
+      <link href="/blog/hi"/>
+      <updated>2022-12-21T07:00:00.951Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/hi">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Jorge</name></author>
+    </entry>
+    <entry>
+      <id>/blog/second-post</id>
+      <title>Second post</title>
+      <link href="/blog/second-post"/>
+      <updated>2022-12-21T07:00:00.952Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/second-post">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Jorge</name></author>
+    </entry>
+    <entry>
+      <id>/blog/hello-ts</id>
+      <title>Hello world, in typescript</title>
+      <link href="/blog/hello-ts"/>
+      <updated>2022-12-21T07:00:00.952Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/hello-ts">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Jorge</name></author>
+    </entry>
+  </feed>
