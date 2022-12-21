@@ -22,7 +22,7 @@ const Header = ({ titlePre = '' }) => {
         <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
         <meta
           name="description"
-          content="An example Next.js site using Notion for the blog"
+          content="Mi personal blog, creado con Notion y Next.js"
         />
         <meta name="og:title" content="My Notion Blog" />
         <meta property="og:image" content={ogImageUrl} />
