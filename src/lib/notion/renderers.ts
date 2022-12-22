@@ -47,3 +47,12 @@ export function textBlock(text = [], noPTag = false, mainKey) {
     noPTag
   )
 }
+
+export function checkText(text = []) {
+  for (const textItem of text) {
+    if (textItem.length === 2) {
+      return true
+    }
+  }
+  return false
+}

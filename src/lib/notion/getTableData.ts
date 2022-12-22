@@ -76,7 +76,7 @@ export default async function loadTable(collectionBlock: any, isPosts = false) {
             val = new Date(providedDate - timezoneOffset).getTime()
             break
           default:
-            console.error('unknown type', type[0], type)
+            console.error('unknown type in getTableData', type[0], type)
             break
         }
       }

@@ -15,13 +15,19 @@ export default async function getNotionUsers(ids: string[]) {
 
   for (const result of results) {
     const { value } = result || { value: {} }
-    const { name } = value
+    // console.log('valores',value)
+    const { name, profile_photo } = value
     let full_name = ''
 
     if (name) {
       full_name = `${name}`
     }
     users[value.id] = { full_name }
+    if (profile_photo) {
+      users[value.id].profile_photo = profile_photo
+    }
+    
+    
   }
   // console.log('users des getNotionUsers', users)
 

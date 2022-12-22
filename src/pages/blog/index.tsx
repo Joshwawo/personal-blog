@@ -27,18 +27,21 @@ export async function getStaticProps({ preview }) {
         return null
       }
       post.Authors = post.Authors || []
+      post.profile_photo = post.Authors || []
       for (const author of post.Authors) {
         authorsToGet.add(author)
       }
       return post
     })
     .filter(Boolean)
-    // console.log('posts', posts)
+  // console.log('posts', posts)}
 
   const { users } = await getNotionUsers([...authorsToGet])
 
   posts.map((post) => {
     post.Authors = post.Authors.map((id) => users[id].full_name)
+    post.profile_photo = post.profile_photo.map((id) => users[id].profile_photo)
+    // post.Img = post.Img.map((id) => users[id].profile_photo)
   })
 
   return {
@@ -51,7 +54,7 @@ export async function getStaticProps({ preview }) {
 }
 
 const Index = ({ posts = [], preview }) => {
-  // console.log('posts', posts)
+  // console.log('posts', posts[0])
   return (
     <>
       <Header titlePre="Blog" />
@@ -85,13 +88,23 @@ const Index = ({ posts = [], preview }) => {
                 </span>
               </h3>
               {post.Authors.length > 0 && (
-                <div className="authors">By: {post.Authors.join(' ')}</div>
+                <div style={{display: 'flex', alignItems: 'center'}}>
+                  <div className="authors">
+                    By: {post.Authors.join(' ')} 
+                  </div>
+                  <img  src={post.profile_photo} width={28} height={28} style={{borderRadius: '50%', marginLeft:'10px'}}/>
+                </div>
+
+                
+                
               )}
-              {post.Language && <div className="authors">Lang: {post?.Language}</div>}
+              {post.Language && (
+                <div className="authors">Lang: {post?.Language}</div>
+              )}
               {post.Date && (
                 <div className="posted">Posted: {getDateStr(post.Date)}</div>
               )}
-              
+
               <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}

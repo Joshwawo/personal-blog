@@ -6,12 +6,13 @@ import Heading from '../../components/heading'
 import components from '../../components/dynamic'
 import ReactJSXParser from '@zeit/react-jsx-parser'
 import blogStyles from '../../styles/blog.module.css'
-import { textBlock } from '../../lib/notion/renderers'
+import { textBlock, checkText } from '../../lib/notion/renderers'
 import getPageData from '../../lib/notion/getPageData'
 import React, { CSSProperties, useEffect } from 'react'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
 import getNotionUsers from '../../lib/notion/getNotionUsers'
 import { getBlogLink, getDateStr } from '../../lib/blog-helpers'
+import { v4 as uuidv4 } from 'uuid'
 
 // Get the data for each blog post
 export async function getStaticProps({ params: { slug }, preview }) {
@@ -463,6 +464,21 @@ const RenderPost = ({ post, redirect, preview }) => {
                   <components.Equation key={id} displayMode={true}>
                     {content}
                   </components.Equation>
+                )
+              }
+              break
+            }
+            case 'to_do': {
+              if (properties && properties.title) {
+                const content = properties.title[0][0]
+                const checked = properties.checked[0][0] === 'Yes'
+                const id = uuidv4()
+
+                toRender.push(
+                  <div key={id}>
+                    <input type="checkbox" defaultChecked={checked} />
+                    <span>{content}</span>
+                  </div>
                 )
               }
               break
