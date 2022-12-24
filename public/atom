@@ -4,58 +4,13 @@
     <subtitle>Blog</subtitle>
     <link href="/atom" rel="self" type="application/rss+xml"/>
     <link href="/" />
-    <updated>2022-12-22T04:19:28.516Z</updated>
+    <updated>2022-12-24T20:20:55.389Z</updated>
     <id>My Notion Blog</id>
-    <entry>
-      <id>/blog/my-firts-blog</id>
-      <title>First blog</title>
-      <link href="/blog/my-firts-blog"/>
-      <updated>2022-12-21T07:00:00.200Z</updated>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          
-          <p class="more">
-            <a href="/blog/my-firts-blog">Read more</a>
-          </p>
-        </div>
-      </content>
-      <author><name>Jorge</name></author>
-    </entry>
-    <entry>
-      <id>/blog/hi</id>
-      <title>holas</title>
-      <link href="/blog/hi"/>
-      <updated>2022-12-21T07:00:00.201Z</updated>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          
-          <p class="more">
-            <a href="/blog/hi">Read more</a>
-          </p>
-        </div>
-      </content>
-      <author><name>Jorge</name></author>
-    </entry>
-    <entry>
-      <id>/blog/second-post</id>
-      <title>Second post</title>
-      <link href="/blog/second-post"/>
-      <updated>2022-12-21T07:00:00.201Z</updated>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-          
-          <p class="more">
-            <a href="/blog/second-post">Read more</a>
-          </p>
-        </div>
-      </content>
-      <author><name>Jorge</name></author>
-    </entry>
     <entry>
       <id>/blog/hello-ts</id>
       <title>Hello world, in typescript</title>
       <link href="/blog/hello-ts"/>
-      <updated>2022-12-21T07:00:00.202Z</updated>
+      <updated>2022-12-21T07:00:00.793Z</updated>
       <content type="xhtml">
         <div xmlns="http://www.w3.org/1999/xhtml">
           
@@ -67,15 +22,15 @@
       <author><name>Jorge</name></author>
     </entry>
     <entry>
-      <id>/blog/devployed</id>
-      <title>how to deployed</title>
-      <link href="/blog/devployed"/>
-      <updated>2022-12-21T07:00:00.202Z</updated>
+      <id>/blog/crear-proyecto-ts</id>
+      <title>Como iniciar un proyecto con typescript con un buen rendimento?</title>
+      <link href="/blog/crear-proyecto-ts"/>
+      <updated>2022-12-23T16:00:00.793Z</updated>
       <content type="xhtml">
         <div xmlns="http://www.w3.org/1999/xhtml">
           
           <p class="more">
-            <a href="/blog/devployed">Read more</a>
+            <a href="/blog/crear-proyecto-ts">Read more</a>
           </p>
         </div>
       </content>

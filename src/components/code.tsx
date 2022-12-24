@@ -12,7 +12,7 @@ const Code = ({ children, language = 'javascript' }) => {
   const notify = () => toast('Copied to clipboard!')
 
   return (
-    <>
+    <div>
       <pre>
         <code
           className="code-block"
@@ -42,8 +42,9 @@ const Code = ({ children, language = 'javascript' }) => {
         }
         .copy-button {
           display: block;
+          position: absolute;
           margin: 1rem 0;
-          padding: 0.5rem 0.7rem;
+          padding: 0.2rem 0.1rem;
           color: #fff;
           background-color: #333;
           border: none;
@@ -51,6 +52,9 @@ const Code = ({ children, language = 'javascript' }) => {
           cursor: pointer;
           transition: background-color 0.2s ease;
           margin-left: auto;
+          top: -.7rem;
+          right: .3rem;
+          opacity: 50%;
         }
         .copy-button:hover {
           background-color: #444;
@@ -65,8 +69,11 @@ const Code = ({ children, language = 'javascript' }) => {
           font-size: 0.75rem;
           border-radius: var(--radius);
         }
+        div{
+          position: relative;
+        }
       `}</style>
-    </>
+    </div>
   )
 }
 
