@@ -72,6 +72,9 @@ const Code = ({ children, language = 'javascript' }) => {
         div{
           position: relative;
         }
+        .papa{
+          position: relative;
+        }
       `}</style>
     </div>
   )
